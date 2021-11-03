@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav id="header-nav">
+            <a href="#">
+                <div id="nav-brand">
+                    <img src="https://cdn1.vivareal.com/p/1-ba36604/v/static/app/svg/styleguide/logo/vivareal-5bcdffca.svg" alt="logo-image">
+                </div>
+            </a>
+            <ul class="nav-links">
+                <a href=""><li>Comprar</li></a>
+                <a><li>Alugar</li></a>
+                <a><li>Imóveis Novos</li></a>
+                <a><li>Seleção Viva Real</li></a>
+                <a><li>Descobrir</li></a>
+                <a><li>Financiamento</li></a>
+            </ul>
+
+            <ul class="nav-links">
+                <a><li>Anunciar Imóveis</li></a>
+                <a><li>Entrar</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- search box -->
+        <aside class="search-box">
+            <article id="primary-search-box">
+                <div id="search-input-container">
+                    <label for="search-input">Localização do Imóvel</label>
+                    <input type="text" id="search-input" type="text" placeholder="Digite uma cidade">
+                </div>
+
+                <label>Imóvel Com</label>
+                <div class="form-check form-switch form-switch-lg">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label id="switch-label" class="form-check-label" for="flexSwitchCheckDefault">Tour Virtual ou Vídeos</label>
+                </div>
+
+                <label for="dropdown">Tipo de Imóvel</label>
+                <div id="dropdown-box" class="btn-group">
+                    <button id="dropdown" class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Mostrar todos</button>
+                    <ul class="dropdown-menu"></ul>
+                </div>
+                <div id="prices-box">
+                    <div>
+                        <label for="minimum-price">Preço Mínimo</label>
+                        <input type="text" id="minimum-price" placeholder="                    $R">
+                    </div>
+                    <div></div>
+                    <div>
+                        <label for="maximum-price">Preço Máximo</label>
+                        <input type="text" id="maximum-price" placeholder="    R$ Ilimitado">
+                    </div>
+                </div>
+                <div id="bedroom-number">
+                    <label>Número de Quartos</label>
+                    <ul>
+                        <li><button>+1</button></li>
+                        <li><button>+2</button></li>
+                        <li><button>+3</button></li>
+                        <li><button>+4</button></li>
+                        <li><button>+5</button></li>
+                    </ul>
+                </div>
+            </article>
+        </aside>
+        <section id="main-content">
+            <!-- second nav bar -->
+            <nav id="main-nav">
+                <ul>
+                    <a href=""><li class="active-link">Comprar</li></a>
+                    <a><li>Alugar</li></a>
+                    <a><li>Imóveis Novos</li></a>
+                    <a><li>Seleção Viva Real</li></a>
+                </ul>
+            </nav>
+            <!-- result found info -->
+            <article id="result-found-box"></article>
+            <!-- properties cards will be rendered here -->
+            <ul id="properties-card-list"></ul>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="/index.js" type="module"></script>
+</body>
+</html>

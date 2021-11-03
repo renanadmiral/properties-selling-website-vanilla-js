@@ -1,0 +1,22 @@
+export const amenitiesDictionary = {
+    'Salão de Festas': 'PARTY_HALL',
+    'Mobiliado': 'FURNISHED',
+    'Lareira': 'FIREPLACE',
+    'Piscina': 'POOL',
+    'Churrasqueira': 'BARBECUE_GRILL',
+    'Ar-Condicionado': 'AIR_CONDITIONING',
+    'Elevador': 'ELEVATOR',
+    'Bicicletário': 'BICYCLES_PLACE',
+    'Condomínio': 'GATED_COMMUNITY',
+    'Playground': 'PLAYGROUND',
+    'Quadra Poliesportiva': 'SPORTS_COURT',
+    'Permitido Animais': 'PETS_ALLOWED',
+    'Cozinha Americana': 'AMERICAN_KITCHEN',
+    'Quadra de Tênis': 'TENNIS_COURT',
+    'Lavanderia': 'LAUNDRY',
+    'Academia': 'GYM',
+    'Portão Automático': 'ELECTRONIC_GATE',
+    'Cinema': 'CINEMA',
+    'Sauna': 'SAUNA',
+    'Jardim': 'GARDEN'
+}

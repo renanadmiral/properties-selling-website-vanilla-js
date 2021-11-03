@@ -1,0 +1,389 @@
+body {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    --header-nav-height: 56px;
+    --card-height: 240px;
+}
+
+#header-nav {
+    background-color: #1190cd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+#nav-brand {
+    height: 22px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+    height: var(--header-nav-height);
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-links li:hover {
+    background-color: lightblue;
+}
+
+main {
+    padding: 70px 4vw 0 4vw;
+    display: flex;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-box label {
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.54);
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.search-box article {
+    padding: 15px;
+    border-radius: 3px;
+}
+
+#primary-search-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fdd685;
+    margin-right: 2vw;
+    border: #fdb10f solid 1px;
+}
+
+#search-input-container {
+    display: flex;
+    flex-direction: column;
+    height: 94px;
+    margin-bottom: 8px;
+}
+
+#search-input {
+    width: 270px;
+}
+
+#primary-search-box input[type="text"] {
+    height: 44px;
+    padding: 0;
+    padding-left: 12px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+}
+
+#primary-search-box input[type="text"]:focus {
+    outline-color: #1190cd;
+}
+
+.invalid-input-border {
+    border: red solid 1px !important;
+}
+
+.invalid-input-text {
+    color: red !important;
+}
+
+.form-switch.form-switch-lg .form-check-input {
+    height: 2rem;
+    width: calc(3rem + 0.75rem);
+    border-radius: 4rem;
+}
+
+.form-switch.form-switch-lg {
+    margin-bottom: 20px;
+}
+
+#switch-label {
+    transform: translate(10px, 10px);
+    text-transform: none;
+}
+
+#dropdown-box {
+    margin-bottom: 20px;
+}
+
+#dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    border: none;
+    font-size: 12px;
+    text-align: left;
+    background-color: white;
+    color: black;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+#prices-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#prices-box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#prices-box div:nth-child(2) {
+    width: 30px;
+    border-top: lightgrey solid 1px;
+    transform: translate(0, 62%);
+}
+
+#prices-box input {
+    width: 120px;
+    direction: rtl;
+}
+
+#bedroom-number ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#bedroom-number button {
+    padding: 9px 13px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    color: gray;
+    font-size: 13px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+#bedroom-number button:hover {
+    background-color: lightgray;
+}
+
+#main-content {
+    width: 60vw;
+}
+
+#main-nav {
+    margin-bottom: 30px;
+    border-bottom: lightgray solid 1px;
+}
+
+#main-nav ul {
+    display: flex;
+}
+
+#main-nav a {
+    text-decoration: none;
+}
+
+#main-nav li {
+    height: 40px;
+    padding-top: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    width: 150px;
+    color: #1190cd;
+    cursor: pointer;
+}
+
+#main-nav li:hover {
+    background-color: lightblue;
+}
+
+.active-link {
+    border-bottom: #1190cd solid 4px;
+}
+
+#result-found-box * {
+    margin-bottom: 25px;
+}
+
+#result-title {
+    font-size: 20px;
+}
+
+#result-title span {
+    font-size: 25px;
+}
+
+#cancel-searched-city {
+    padding: 10px 15px;
+    color: #1190cd;
+    background-color: white;
+    border: #1190cd solid 1px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+#cancel-searched-city:hover {
+    background-color: lightblue;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#result-not-found-box {
+    padding-left: 2vw;
+    text-align: center;
+}
+
+#result-not-found-box * {
+    margin-bottom: 20px;
+}
+
+#result-not-found-box h1 {
+    font-weight: bold;
+    font-size: 47px;
+    text-transform: uppercase;
+}
+
+#result-not-found-box h2 {
+    color: red;
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.property-card {
+    display: flex;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.property-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.property-img {
+    height: var(--card-height);
+    width: 550px;
+    border-radius: 6px 0 0 6px;
+}
+
+.description-box {
+    position: relative;
+    width: 100%;
+    padding: 15px 0 10px 15px;
+    border: lightgray solid 1px;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+}
+
+.description-box h3 {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.description-box h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.spaces-list {
+    display: flex;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.spaces-list span {
+    font-weight: bold;
+}
+
+.spaces-list li {
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.amenities-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.amenities-list li {
+    padding: 5px 7px;
+    margin-right: 7px;
+    background-color: lightgray;
+    color: grey;
+    border-radius: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.description-box h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description-box h5 {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.card-btns-box {
+    position: absolute;
+    display: inline-block;
+    bottom: 16px;
+    right: 16px;
+}
+
+.card-btns-box button {
+    padding: 10px 15px;
+    font-size: 13px;
+    color: #ee6500;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.card-btns-box button:last-child {
+    margin-left: 10px;
+}
+
+.card-btns-box button:hover {
+    color: white;
+    background-color: #ee6500;
+}
+
+.hide {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.property-card:hover .hide {
+    opacity: 1;
+}
